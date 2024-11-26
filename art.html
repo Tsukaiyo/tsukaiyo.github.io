@@ -1,0 +1,336 @@
+<!-- 
+Developer: Angelina Almanza
+
+Page Content: Main Art Dev -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Art Department</title>
+
+  <!-- Load CSS file -->
+  <link href="artstyle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- /* Add fonts */ -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&family=Cinzel:wght@900&family=New+Rocker&family=Hind+Madurai&family=Cormorant+Unicase&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Hind+Madurai:wght@300;400;500;600;700&family=New+Rocker&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <!----------------------------------NAVIGATION-BAR---------------------------->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="images/Final Escort Icon.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#meetTheTeam">Meet The Team</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Departments
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="accessibility page/accessibility.html">Accessibility</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="gameDesign.html">Game Design</a></li>
+            <li><a href="QA page/qa.html">QA</a></li>
+            <li><a href="soundDesign.html">Sound Design</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="writing.html">Writing</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactUs">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!----------------------------------ART-TEAM-N-DESCRIPTION---------------------------->
+
+  <br>
+  <br>
+  <p></p>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <!-- Replace SVG with an image -->
+          <svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" />
+          </svg>
+        </div>
+        <div class="col-sm-9">
+          <!-- Team name -->
+          <h1>The Art Team</h1>
+          <p>Bringing the characters and story world to life through our visuals, allowing the players to immerse themselves into a vivid game play experience.</p>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------CONCEPT-ART-VIDEO---------------------------->
+
+  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGW9I8utiE/8F47ICkTFyyhn_7t5n64nQ/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+  <!----------------------------------TEAM-MEMBERS---------------------------->
+
+  <div class="container">
+
+     <!-- Header -->
+    <div class="centerteam">
+      <h1>Meet the Art Team</h1>
+      <h2>Team Leads</h2>
+
+      <!-- Team leads -->
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-3">
+            <!-- Replace SVG with an image -->
+            <!-- <svg width="300" height="130">  -->
+              <img scr="images/Art/Headshots/Vic.jpg">
+              <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="grey" /> <!--image-->
+            </svg>
+          </div>
+
+          
+          <div class="col-sm-9">
+            <h3 id = "L1">Victoria Ouryvski, Lead Art Producer</h3>
+            <p>Victoria is a 4th year Computer Science student with a great passion for all things Art and Cod. She loves the creation process and believes that making video games is one of the best ways to combine her love for Art and Programming. </p>
+
+            <a class = "normal" href="https://www.linkedin.com/in/vic-ouryvski-5354b123b/"> Check out Vic on linkedin here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!----------------------------------GRID---------------------------->
+
+<div class="grid-container">
+  <div class="grid-item">
+    <h4 class = "membername" id = "t1">Julie Wu</h4>
+  <!-- <img src=""> -->
+  </div>
+  <div class="grid-item">
+    <h4 class = "membername" id = "t2">Madeline Hanitijo</h4> 
+  </div>
+  <div class="grid-item">
+    <h4 class = "membername" id = "t3">Brianna Latter</h4>
+  </div> 
+</div>
+
+<p></p>
+
+<p id = "test">Test text</p>
+
+<!----------------------------------TEST---------------------------->
+
+
+<div class="panel-group" id="accordion">
+  <!-- Julie -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            Julie Wu</a>
+        </h4>
+      </div>
+
+      <!-- collapse -->
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+
+          <h4>Brianna Latter</h4>
+
+          <p>Julie is a student in The Creative School's Master of Digital Media program and is an illustrator.</p>
+
+          <!-- Canva embed -->
+          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+         border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+              style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+              src="https://www.canva.com/design/DAGTDAIRZ5U/RlYAlU6q8bcCA6NDote5sA/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGV6gS3Clg&#x2F;oHQSJfSrgLCwrFbvAVfFEg&#x2F;view?utm_content=DAGV6gS3Clg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Madeline/Stormy -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Madeline "Stormy" Hanitiji</a>
+        </h4>
+      </div>
+
+      <!-- collapse -->
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+
+          <!-- Text Content -->
+
+          <h4>Madeline "Stormy" Hanitiji</h4>
+
+          <p>Madeline is an undergraduate student in The Creative School's New Media program. She is a freelance illustrator and has started developing video games over the last year.</p>
+
+          <a class = "normal" href="https://ymorts.github.io/portfolio/"> Check out Madeline's Portfolio site here!</a>
+
+          <!-- Canva embed -->
+          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+         border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+              style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+              src="https://www.canva.com/design/DAGTeGJcTnM/XP1QuREEkoZBQ0fM4OQwhg/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGV6gS3Clg&#x2F;oHQSJfSrgLCwrFbvAVfFEg&#x2F;view?utm_content=DAGV6gS3Clg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Briana -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            Brianna Latter</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+
+          <!-- Text Content -->
+
+          <h4>Brianna Latter</h4>
+
+          <p>"Brianna is a 4th year undergraduate student in Graphic Communications Management and is extremely passionate about all things involving video games and art! She is interested in concept planning, traditional and digital art, painting, sketching, and
+          designing."</p>
+
+          <!-- Canva embed -->
+          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+         border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+              style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+              src="https://www.canva.com/design/DAGV6gS3Clg/oHQSJfSrgLCwrFbvAVfFEg/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+          </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGV6gS3Clg&#x2F;oHQSJfSrgLCwrFbvAVfFEg&#x2F;view?utm_content=DAGV6gS3Clg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!----------------------------------FOOTER---------------------------->
+
+<footer>
+  <div class="footerinfo" >
+    <p>Game Makers Union</p>
+<p>Toronto Metropolitan University</p>
+ <p>350 Victoria Street</p>
+ <p>Toronto, ON, Canada</p>
+ <p>P: 416-555-5555</p></div>
+ <div class="disclamer" ><p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.</div> </p>
+
+</footer>
+
+<!----------------------------------JAVA-SCRIPT---------------------------->
+
+<script>
+
+
+  //TEAM MEMBERS
+
+  // var hoverl1=document.querySelector("#L1");
+  var hovert1=document.querySelector("#t1");
+  var hovert2=document.querySelector("#t2");
+  var hovert3=document.querySelector("#t3");
+
+  var HoverTest = document.querySelector("#test");
+
+  // hoverl1=addEventListener("click", hover);
+  hovert1=addEventListener("mouseover", hover);
+  hovert2=addEventListener("mouseover", hover);
+  hovert3=addEventListener("mouseover", hover);
+
+
+  function HeaderNav(){//for clicking buttons in the Nav
+
+    if(this.id=="Home"){
+      this.textContent = "Success";
+      location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
+
+    else if(this.id=="About"){
+      this.textContent = "Success";
+
+    }
+
+    else if(this.id=="Team"){
+      this.textContent = "Success";
+
+    }
+
+    else if(this.id=="Contact"){
+      this.textContent = "Success";
+
+    }
+
+  }
+
+  function hover(){//for hovering over assets
+
+    if(this.id=="L1"){
+      this.textContent = "Success";
+      HoverText.textContent = "Success!";
+
+    }
+
+    else if(this.id=="t1"){
+      this.textContent = "Success";
+      overText.textContent = "Success!";
+    }
+    else if (this.id=="t2"){
+      this.textContent = "Success";
+      overText.textContent = "Success!";
+    }
+     else if (this.id=="t3"){
+      this.textContent = "Success";
+      overText.textContent = "Success!";
+    }
+
+  }
+
+</script>
+
+</body>
+</html>

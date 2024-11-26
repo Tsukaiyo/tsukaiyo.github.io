@@ -4,33 +4,225 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>GMU Game</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <!-- JQuery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- JavaScript Library -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>Final Escort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&family=Cinzel:wght@900&family=New+Rocker&family=Hind+Madurai&family=Cormorant+Unicase&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+		document.addEventListener('DOMContentLoaded', () => {
+			document.getElementById('access').addEventListener('click', () => {
+				window.location.href = "accessibility page/accessibility.html";
+			});
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			document.getElementById('art').addEventListener('click', () => {
+				window.location.href = "art.html";
+			});
+
+			document.getElementById('game').addEventListener('click', () => {
+				window.location.href = "gameDesign.html";
+			});
+
+      document.getElementById('qa').addEventListener('click', () => {
+				window.location.href = "QA page/qa.html";
+			});
+
+			document.getElementById('sound').addEventListener('click', () => {
+				window.location.href = "soundDesign.html";
+			});
+
+			document.getElementById('ui').addEventListener('click', () => {
+				window.location.href = "ui.html";
+			});
+      
+			document.getElementById('writing').addEventListener('click', () => {
+				window.location.href = "writing.html";
+			});
+		});
+	</script>
 </head>
 
 <body>
-  <h1>GMU's First Game</h1>
-  <div>
-    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-   border-radius: 8px; will-change: transform;">
-      <iframe loading="lazy"
-        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGOfRbrDMk&#x2F;GKceSixonFvDtPSlVPXNPA&#x2F;view?embed"
-        allowfullscreen="allowfullscreen" allow="fullscreen">
-      </iframe>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img src="images/Final Escort Icon.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#meetTheTeam">Meet The Team</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Departments
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="accessibility page/accessibility.html">Accessibility</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="gameDesign.html">Game Design</a></li>
+            <li><a href="QA page/qa.html">QA</a></li>
+            <li><a href="soundDesign.html">Sound Design</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="writing.html">Writing</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactUs">Contact Us</a></li>
+      </ul>
     </div>
-    <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGOfRbrDMk&#x2F;GKceSixonFvDtPSlVPXNPA&#x2F;view?utm_content=DAGOfRbrDMk&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-      target="_blank" rel="noopener">GMU Meeting 1 2024</a> by Maeve Fitzgerald
+  </nav>
+
+  <img class="img-responsive" src="images/FinalEscortLogo.png">
+  <div class="container">
+      <div class="jumbotron">
+          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+              <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                      src="https://www.canva.com/design/DAGW9I8utiE/8F47ICkTFyyhn_7t5n64nQ/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+              </iframe>
+          </div>
+      </div>
+    <div class="center">
+      <p>When the royal family falls to an uprising, a lone Knight flees with the Princess. Her life and the kingdom's future are in your hands. With 10 days to navigate treacherous paths and lurking dangers, every decision you make will shape its fate. How far will loyalty take you when the kingdom's future is hanging by a thread?</p>
+      <p>Releasing April 2025</p>
+      <br>
+    </div>
   </div>
+
+
+  <!-- Departments -->
+  <div class="container">
+    <h1 class="center">Departments</h1>
+    <!-- Row 1 -->
+    <div class="row">
+      <!-- Department card 1 -->
+      <div class="col-sm-5" id="access">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/access icon.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Accessibility</h2>
+            <p>Making sure the game is playable for everyone, with features that support a wide range of abilities.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-5" id="art">
+        <!-- Department card 2 -->
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/palette.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Art</h2>
+            <p>Bringing the characters and story world to life through our visuals, allowing the players to immerse themselves into a vivid game play experience. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Row 2 -->
+    <div class="row">
+      <!-- Department card 3 -->
+      <div class="col-sm-5" id="game">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/concrete-bag.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Game Design</h2>
+            <p>Conceptualizing and designing an engaging gameplay to keep players hooked from start to finish.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <!-- Department card 4 -->
+      <div class="col-sm-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/computing.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Programming</h2>
+            <p>Building the game.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Row 3 -->
+    <div class="row">
+      <!-- Department card 5 -->
+      <div class="col-sm-5" id="qa">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/magnifying-glass.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Quality Assurance</h2>
+            <p>Ensuring the game is clear, fun, and bug-free.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <!-- Department card 6 -->
+      <div class="col-sm-5" id="sound">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/sound-waves.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Sound Design</h2>
+            <p>Composing and recording original music and sound effects, to enhance the gameplay experience with immersive audio. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Row 4 -->
+    <div class="row">
+      <!-- Department card 7 -->
+      <div class="col-sm-5" id="ui">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/click.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>User Interface (UI)</h2>
+            <p>Designing easy-to-use interfaces and experiences that make playing the game enjoyable and intuitive.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <!-- Department card 8 -->
+      <div class="col-sm-5" id="writing">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/notebook.png">
+          </div>
+          <div class="col-sm-8">
+            <h2>Writing</h2>
+            <p>Crafting the interactive story, dialogue and building engaging lore that will allow players to shape the game's narrative through their choices. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footerinfo" >
+      <p>Game Makers Union</p>
+  <p>Toronto Metropolitan University</p>
+   <p>350 Victoria Street</p>
+   <p>Toronto, ON, Canada</p>
+   <p>P: 416-555-5555</p></div>
+   <div class="disclamer" ><p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.</div> </p>
+  
+  </footer>
+
 </body>
 
 </html>

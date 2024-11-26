@@ -1,0 +1,219 @@
+/* Add a black background color to the top navigation */
+.navbarimg{
+    width:80%;
+    height:auto;
+}
+
+#ateam{
+    color: white; /* Text color */
+    text-shadow: 0 0 10px #000000,
+                    0 0 20px #000000,
+                    0 0 30px #F2E5DA,
+                    0 0 40px #F2E5DA;
+    font-size: 48px;
+    font-weight: 400 !important;
+}
+    
+
+body{
+    background-image: url('images/018.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#smbutton{
+    background-color: #471414;
+    color:#F2E5DA;
+    font-family: 'Cinzel', serif !important;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    padding-top:30px;
+    font-family: 'Cinzel', serif !important;
+    color:#000000;
+}
+
+h2{
+    font-family: 'Comorant Unicase', serif !important;
+    font-weight: 700 !important;
+    color: #000000;
+}
+
+#al{
+    font-family: 'Comorant Unicase', serif !important;
+    font-weight: 700 !important;
+    font-size: large;
+    color: #F2E5DA;
+}
+
+.panel-heading{
+    background-color: #471414 !important;
+    color: #F2E5DA
+
+}
+
+
+
+p{
+
+    font-family: "Crimson Text", serif;
+    font-size: 22px !important;
+}
+
+.jumbotron{
+    background: #F2E5DA !important;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #E3D4AC; 
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: inline-block; 
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #333333; /* Darker text on hover */
+    border-radius: 5px; /* Optional: add rounded corners for a softer look */
+  }
+  
+  .topnav a.active {
+    color: #ff6f61;
+    background-color: rgba(255, 111, 97, 0.1);
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    width: 60%;
+    justify-content: space-evenly;  
+    font-family: "New Rocker", serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #231F20;
+    height: 60px;
+  }
+  
+  .navbar-header {
+    padding-left: 50px;
+  }
+
+.center {
+text-align: center;
+}
+
+#more {display:none;}
+  
+
+.col-sm-5 {
+background-color: #F2E5DA;
+padding: 14px 16px;
+}
+
+footer {
+text-align: center;
+padding: 3px;
+background-color: #949494;
+color: white;
+}
+
+.rectimg{
+width: 200px;
+height: 200px;
+border-radius: 20px; /* To give rounded corners like the SVG's rx and ry */
+background-image: url('images/eboily.jpg'); /* Add your image URL here */
+background-size: cover; /* Ensures the image covers the entire rectangle */
+background-position: center; /* Centers the image in the rectangle */
+background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+h1{
+    text-align: center;
+    padding-top:30px;
+}
+.whatisgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);   
+    gap: 20px;        
+
+}
+
+#wdwd{
+    text-shadow: 0 0 10px #F2E5DA,
+    0 0 20px #F2E5DA,
+    0 0 30px #F2E5DA,
+    0 0 40px #F2E5DA;
+}
+
+.griditem {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    width: 50vh;
+    height: 10vh;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    font-family: "Crimson Text", serif;
+}
+
+#dbug, #mqual{
+    background-color: #471414;
+    color:#F2E5DA
+}
+
+#bgame, #efun{
+    background-color: #F2E5DA;
+}
+
+.gridwrapper {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    height: 30vh;          /* Full viewport height */
+}
+
+.rectimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px; 
+    background-image: url('images/patrik.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    }
+
+.rectimg1{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px; 
+    background-image: url('images/prapti.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    }
+.rectimg2{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px; 
+    background-image: url('images/GMU-Logo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    }
+    
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QA</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&family=Cinzel:wght@900&family=New+Rocker&family=Hind+Madurai&family=Cormorant+Unicase&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html"><img src="../images/Final Escort Icon.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#meetTheTeam">Meet The Team</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Departments
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../accessibility page/accessibility.html">Accessibility</a></li>
+            <li><a href="../art.html">Art</a></li>
+            <li><a href="../gameDesign.html">Game Design</a></li>
+            <li><a href="../QA page/qa.html">QA</a></li>
+            <li><a href="../soundDesign.html">Sound Design</a></li>
+            <li><a href="../ui.html">UI</a></li>
+            <li><a href="../writing.html">Writing</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactUs">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+
+  <!--<div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3">-->
+          <!-- Replace SVG with an image -->
+          <!--<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="grey" />
+          </svg>
+        </div>-->
+
+        <!--<div class="col-sm-9">-->
+          <!-- Team name -->
+          <!--<h1>The QA Team</h1>
+          <p>Running Quality Assurance for Final Escort</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="container">
+    <div class="center">
+      <h1 id="qteam">The QA Team</h1>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="rectimg">
+              <rect width="200" height="200" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
+          </div>
+
+          <div class="col-sm-9">
+            <h2>Eamon Boily, QA Lead</h2>
+            <p>I love making games both physical and digital <span id="dots">...</span>
+              <span id="more">One of my biggest interests in game making is creating simple games that still allow for depth and complexity. In QA, our goal is to take the first iterations of a game and polish it until it becomes a finished product. We achieve this goal through rigorous play-testing and by working close with the other development teams. QA is a vital role in any game development studio and can make or break the user experience.</span>
+            </p>
+
+            <button onclick="showMore()" id="smbutton">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="wdwd">What do we do?</h1>
+  <div class="gridwrapper">
+    <div class="whatisgrid">
+      <div class="griditem" id="dbug" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">Document Bugs</div>
+      <div class="griditem" id="bgame" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">Break the Game</div>
+      <div class="griditem" id="efun" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">Ensure Fun Gameplay</div>
+      <div class="griditem" id="mqual" onmouseover="showInfo(this)" onmouseout="hideInfo(this)">Maintain Quality Standards</div>
+    </div>
+  </div>
+  
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+            Anith Rajakumar</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>I am QA technican for Final Escort, currently in my 2nd year of computer engineering. My favourite thing to do learn new things in my free time. My favourite game is currently minecraft. Always looking to make new friends!</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Ethan Wong</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>I'm Ethan Wong, I'm in QA and I like growing plants during the summer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+            Additional QA Members</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>Bowie Chau</p>
+          <p>Charran Thangeswaran</p>
+          <p>Fatimah Hussain</p>
+          <p>Jaineel Shah</p>
+          <p>Michael Vu</p>
+          <p>Carl Jeong</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footerinfo" >
+      <p>Game Makers Union</p>
+  <p>Toronto Metropolitan University</p>
+   <p>350 Victoria Street</p>
+   <p>Toronto, ON, Canada</p>
+   <p>P: 416-555-5555</p></div>
+   <div class="disclamer" ><p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.</div> </p>
+  
+  </footer>
+</body>
