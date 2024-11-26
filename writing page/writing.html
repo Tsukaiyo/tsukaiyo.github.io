@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width">
   <title>Writing</title>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&family=Cinzel:wght@900&family=New+Rocker&family=Hind+Madurai&family=Cormorant+Unicase&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="wstyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="wscript.js"></script>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Departments
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="accessibility page/accessibility.html">Accessibility</a></li>
-            <li><a href="art.html">Art</a></li>
-            <li><a href="gameDesign.html">Game Design</a></li>
-            <li><a href="QA page/qa.html">QA</a></li>
-            <li><a href="soundDesign.html">Sound Design</a></li>
-            <li><a href="ui.html">UI</a></li>
-            <li><a href="writing.html">Writing</a></li>
+            <li><a href="../accessibility page/accessibility.html">Accessibility</a></li>
+            <li><a href="../art.html">Art</a></li>
+            <li><a href="../gameDesign.html">Game Design</a></li>
+            <li><a href="../QA page/qa.html">QA</a></li>
+            <li><a href="../soundDesign.html">Sound Design</a></li>
+            <li><a href="../ui.html">UI</a></li>
+            <li><a href="../writing.html">Writing</a></li>
           </ul>
         </li>
         <li><a href="#contactUs">Contact Us</a></li>
@@ -44,10 +44,9 @@
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-3">
-          <!-- Replace SVG with an image -->
-          <svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="grey" />
-          </svg>
+          <div class="rectimg">
+            <rect width="200" height="200" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
+          </div>
         </div>
         <div class="col-sm-9">
           <!-- Team name -->
@@ -58,57 +57,75 @@
     </div>
   </div>
 
-  <!-- Writing Team Members -->
   <div class="container">
     <div class="center">
-      <h1>The Writing Team</h1>
+      <h1 id="ateam">The Writing Team</h1>
       <div class="jumbotron">
         <div class="row">
-          <div class="col-sm-3">
-            <svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
-              <img src="images/Cass.jpg" alt="Cassandra Matchett">
-              <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="grey" />
-            </svg>
+          <div class="rectimg1">
+              <rect width="200" height="200" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
           </div>
+
           <div class="col-sm-9">
-            <h2> Cassandra Matchett, Writing Lead</h2>
-            <p> Cassandra is a 4th year undergraduate student in the RTA School of Media. Her concentration is in Video Game Design and Television & Video, along with a Minor in English. She is a passionate storyteller and aspiring media producer.</p>
-          </div>
-        </div>
-      </div> 
-      <div class="jumbotron">
-        <div class="row">
-          <div class="col-sm-3">
-            <svg width="300" height="130" xmlns="Stevie.jpg">
-              <img src="images/Stevie.jpg" alt="Stevie Zouri">
-              <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="grey" />
-            </svg>
-          </div>
-          <div class="col-sm-9">
-            <h2> Stevie Zouri, Writing Producer</h2>
-            <p> Stevie is an undergraduate student at the RTA School of Media. She is a game design, media and writing enthusiast, hoping to pursue a career at intersection of all these disciplines. </p>
+            <h2>Cassandra Matchett, Writing Lead</h2>
+            <p>Cassandra is a 4th year undergraduate student in the RTA School of Media. Her concentration <span id="dots">...</span>
+              <span id="more"> is in Video Game Design and Television & Video, along with a Minor in English. She is a passionate storyteller and aspiring media producer. </span>
+            </p>
+
+            <button onclick="showMore(this.id)" id="smbutton">Read more</button>
           </div>
         </div>
       </div>
+
+      <div class="jumbotron">
+        <div class="row">
+          <div class="rectimg2">
+              <rect width="200" height="200" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
+          </div>
+
+          <div class="col-sm-9">
+            <h2>Stevie Zouri, Writing Producer</h2>
+            <p>Stevie is an undergraduate student at the RTA School of Media. She is a <span id="dots1">...</span>
+              <span id="more1">game design, media and writing enthusiast, hoping to pursue a career at intersection of all these disciplines. </span>
+            </p>
+
+            <button onclick="showMore(this.id)" id="smbutton1">Read more</button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-
   <!-- Collapse Panels -->
   <div class="panel-group" id="accordion">
     <!-- Narrative Design Panel -->
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          <div class="rectimg3">
+            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
+          </div>
+          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
             Uma Krishnan Gonzalez: Narrative Design, Characters & Plot
           </a>
-          <img src="images/Uma.jpg" alt="Uma Krishnan Gonzalez">
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse">
         <div class="panel-body">
+          
           <p> Uma is a Biomedical Sciences student. She is a science enthusiast with a passion for RPG games, storytelling, and character analysis. An avid portrait artist and polyglot, they are fluent in French, English, and Spanish. </p>
         </div>
+
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+        border-radius: 8px; will-change: transform;">
+           <iframe loading="lazy"
+             style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+             src="https://www.canva.com/design/DAGXXhGk4x4/KROuuLkgRL61YZWp5mYHMA/edit?utm_content=DAGXXhGk4x4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+             allowfullscreen="allowfullscreen" allow="fullscreen">
+           </iframe>
+        </div>
+
       </div>
     </div>
 
@@ -116,8 +133,11 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-      <img src="images/Lina.jpg" alt="Lina Cunningham-Bracht">
+          <div class="rectimg4">
+            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
+          </div>
+          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+
             Lina Cunningham-Bracht: Editing & Script Doctoring
           </a>
         </h4>
@@ -133,11 +153,8 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
             Darragh Sawyer: Narrative Design, World-Building (Lore)
-             <img src="images/Darragh.jpg" alt="Darragh Sawyer
-          ">
-
           </a>
             </h4>
       </div>
@@ -151,32 +168,28 @@
 
   <!-- Characters Section -->
   <div class="container" style="margin-top: 50px;">
-    <h2>Characters by Our Team</h2>
+    <h2 id="charTitle">Characters by Our Team</h2>
     <div class="row" style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
-      <div class="character-box" style="flex: 1; text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 5px; max-width: 300px;">
-        <img src="images/Knight.jpg" alt="The Knight, Alaine" class="character-image" style="width: 100%; border-radius: 5px;">
-        <p class="character-description" style="display: none; margin-top: 10px;"> A one-armed South Asian warrior who uses her exceptional combat skills to protect Princess Éléonore and navigate a treacherous journey.</p>
+      <div class="character-box">
+        <img src="images/Knight.jpg" alt="The Knight, Alaine" class="character-image">
+        <p class="character-description">
+          A one-armed South Asian warrior who uses her exceptional combat skills to protect Princess Éléonore and navigate a treacherous journey.
+        </p>
       </div>
-      <div class="character-box" style="flex: 1; text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 5px; max-width: 300px;">
-        <img src="images/Princess.jpg" alt="The Princess, Eléonore" class="character-image" style="width: 100%; border-radius: 5px;">
-        <p class="character-description" style="display: none; margin-top: 10px;">A brilliant French-Flemish diplomat with sharp interpersonal and strategic skills, supports the Knight as a steadfast companion through the quest.</p>
+      <div class="character-box">
+        <img src="images/Princess.jpg" alt="The Princess, Eléonore" class="character-image">
+        <p class="character-description">
+          A brilliant French-Flemish diplomat with sharp interpersonal and strategic skills, supports the Knight as a steadfast companion through the quest.
+        </p>
       </div>
-      <div class="character-box" style="flex: 1; text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 5px; max-width: 300px;">
-        <img src="images/Devil.jpg" alt="The Devil, Reynard" class="character-image" style="width: 100%; border-radius: 5px;">
-        <p class="character-description" style="display: none; margin-top: 10px;"> A timeless shape-shifting spirit with a mysterious aura.</p>
+      <div class="character-box">
+        <img src="images/Devil.jpg" alt="The Devil, Reynard" class="character-image">
+        <p class="character-description">
+          A timeless shape-shifting spirit with a mysterious aura.
+        </p>
       </div>
     </div>
   </div>
-  <footer>
-    <div class="footerinfo" >
-      <p>Game Makers Union</p>
-  <p>Toronto Metropolitan University</p>
-   <p>350 Victoria Street</p>
-   <p>Toronto, ON, Canada</p>
-   <p>P: 416-555-5555</p></div>
-   <div class="disclamer" ><p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.</div> </p>
-  
-  </footer>
 
   <script>
     // Show description on hover
