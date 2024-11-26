@@ -47,6 +47,10 @@ p{
     
 }
 
+p{
+    text-align: center;
+}
+
 #options{
     color:#000000;
 }
@@ -149,7 +153,7 @@ color: white;
 
 .panel-heading{
     background-color: #471414 !important;
-    color: #F2E5DA;
+    color: #F2E5DA
 
 }
 
@@ -309,16 +313,24 @@ opacity: 1; /* Show text */
     padding-bottom: 6vh;
 }
 
-#portfolioButton1{
-    background-color: #471414;
-    color:#F2E5DA;
-    font-family: 'Cinzel', serif !important;
-    font-size: large;
+.button-container {
+    padding-top: 5vh;
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+ }
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #471414; 
+    color: #F2E5DA; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#portfolioButton2{
-    background-color: #471414;
-    color:#F2E5DA;
-    font-family: 'Cinzel', serif !important;
-    font-size: large;
+.button-container button:hover {
+    background-color: #000000; /* Darker blue on hover */
 }
