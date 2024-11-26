@@ -2,8 +2,10 @@
 
 footer {
   text-align: center;
+  padding: 3px;
   background-color: rgba(35, 31, 32, 0.6);
   color: white;
+  height: 120px;
   opacity: 0.6;
 }
 
@@ -15,12 +17,18 @@ body{
 }
 
 /*---------------------------------TITLES-&-TEXT*/
+.center {
+  text-align: center;
+  font-family: "Hind Madurai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 h1{
 
-  /*padding: 1em;*/
+  padding: 1em;
   margin: auto;
-/*  width: 50%;*/
+
   text-align: center;
 
   font-family: "Quattrocento", serif;
@@ -37,7 +45,6 @@ h2{
   font-family: "Quattrocento", serif;
   font-weight: 400;
   font-style: normal;
-/*  width: 80%;*/
 }
 
 h3{
@@ -49,7 +56,6 @@ h3{
   font-family: "Quattrocento", serif;
   font-weight: 400;
   font-style: normal;
-/*  width: 80%;*/
 }
 
 h4{
@@ -57,13 +63,34 @@ h4{
   padding: 1em;
   margin: auto;
   text-align: center;
+
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: header;
 }
 
 p{
-  font-family: "Crimson Text", serif;
-  font-size: 22px !important;
+
+  padding: 1em;
+  margin: auto;
+
+  text-align: left;
+
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.normal {
+  padding: 1em;
+  margin: auto;
+
+  text-align: left;
+
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /*---------------------------------IMAGES-&-VIDEOS*/
 
@@ -74,6 +101,14 @@ img{
 /*  width: 30%;*/
 }
 
+.headshot{
+  width: 14em;
+  clear: both;
+  padding: .5em;
+}
+
+.wideImages{
+}
 
 /*---------------------------------CANVA-EMBEDS*/
 
@@ -127,12 +162,7 @@ img{
 }
     
 
-.center {
-  text-align: center;
-  font-family: "Hind Madurai", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 .col-sm-5 {
   background-color: #dedede;
@@ -147,24 +177,32 @@ img{
 /*  align-items: center;*/
 }
 
+/*Art*/
+.multicontainer{
+
+  background-color: tan;
+
+}
+
 /*Team Members*/
 
 .col-sm-9{
   text-align: center;
   margin: auto;
-  background-color:beige;
+  padding: 5em;
+/*  clear: left;*/
 }
 
 .col-sm-3{
   text-align: center;
   margin: auto;
-  background-color: tan;
+  padding: 5em;
+/*  clear: right;*/
 }
 
 .row{
   text-align: center;
   margin: auto;
-  background-color:tan;
 
 }
 
@@ -178,7 +216,7 @@ img{
 /*Grid*/
 
 .grid-container {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: auto auto;
   gap: 1em;
   padding: 1em;
@@ -191,4 +229,25 @@ img{
   padding: 2em;
 /*  font-size: 3em;*/
 /*  text-align: center;*/
+
+width: 40%;
+}
+
+/*Dropdoown*/
+
+.panel-body{
+  background-image: url('images/092.jpg');
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+.bio{
+  margin: right;
+  padding: .5em;
+/*  width: 50%;*/
+
+  clear: both;
+  background-color: tan;
+
+
 }
