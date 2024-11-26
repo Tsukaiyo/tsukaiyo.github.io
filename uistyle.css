@@ -29,6 +29,12 @@ body{
     font-family: 'Cinzel', serif !important;
     font-size: large;
 }
+#smbutton1{
+    background-color: #471414;
+    color:#F2E5DA;
+    font-family: 'Cinzel', serif !important;
+    font-size: large;
+}
 h1{
     text-align: center;
     padding-top:30px;
