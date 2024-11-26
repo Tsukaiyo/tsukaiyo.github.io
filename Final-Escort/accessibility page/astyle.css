@@ -1,0 +1,211 @@
+/* Add a black background color to the top navigation */
+
+.navbarimg{
+    width:80%;
+    height:auto;
+}
+
+body{
+    background-image: url('018.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ateam{
+    color: white; /* Text color */
+    text-shadow: 0 0 10px #000000,
+                 0 0 20px #000000,
+                 0 0 30px #F2E5DA,
+                 0 0 40px #F2E5DA;
+    font-size: 52px;
+}
+
+#smbutton{
+    background-color: #471414;
+    color:#F2E5DA;
+    font-family: 'Cinzel', serif !important;
+    font-size: large;
+}
+
+p{
+
+    font-family: "Crimson Text", serif;
+    font-size: 22px !important;
+}
+.contentBox {
+    background-color: #471414; 
+    padding: 20px;              
+ 
+    border-radius: 10px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 150vh;         
+    margin: 20px auto;
+    color: #F2E5DA;
+    
+}
+
+#options{
+    color:#000000;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #E3D4AC; 
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: inline-block; 
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #333333; /* Darker text on hover */
+    border-radius: 5px; /* Optional: add rounded corners for a softer look */
+  }
+  
+  .topnav a.active {
+    color: #ff6f61;
+    background-color: rgba(255, 111, 97, 0.1);
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    width: 60%;
+    justify-content: space-evenly;  
+    font-family: "New Rocker", serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #231F20;
+    height: 60px;
+  }
+  
+  .navbar-header {
+    padding-left: 50px;
+  }
+
+
+.center {
+text-align: center;
+}
+
+#more {display:none;}
+  
+
+.col-sm-5 {
+background-color: #F2E5DA;
+padding: 14px 16px;
+}
+
+.jumbotron{
+    background: #F2E5DA !important;
+}
+
+footer {
+text-align: center;
+padding: 3px;
+background-color: #949494;
+color: white;
+}
+
+.rectimg{
+width: 200px;
+height: 200px;
+border-radius: 20px; 
+background-image: url('hnic.png'); 
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+h1{
+    text-align: center;
+    padding-top:30px;
+    font-family: 'Cinzel', serif !important;
+    color:#000000;
+}
+
+h2{
+    font-family: 'Comorant Unicase', serif !important;
+    font-weight: 700 !important;
+    color: #000000;
+}
+
+.access{
+    text-align: center;
+}
+
+.options{
+    text-align: center;
+}
+
+#startlearning{
+    font-size: x-large;
+}
+.owrapper{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 10vh; 
+
+    font-family: "Quattrocento", serif !important;
+    color: #F2E5DA;
+    font-size: medium;
+}
+
+ul{
+    font-family: "Quattrocento", serif !important;
+    color: #000000;
+    font-size: medium;
+}
+
+label {
+    margin-bottom: 10px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px; 
+    padding-bottom: 5vh;
+}
+
+.image-row img {
+    width: 35vh; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#motorinfo,
+#cognitiveinfo,
+#visioninfo,
+#hearinginfo,
+#speechinfo {
+    display: none;
+
+}
+
+
+.featurestext{
+    padding-left: 5vh;
+}
+
+.features{
+    background-color: #F2E5DA;
+    padding-top: 5vh;
+}
+

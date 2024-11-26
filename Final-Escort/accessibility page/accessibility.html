@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Accessibility</title>
+  <link href="astyle.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&family=Cinzel:wght@900&family=New+Rocker&family=Hind+Madurai&family=Cormorant+Unicase&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="ascript.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html"><img src="../images/Final Escort Icon.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#meetTheTeam">Meet The Team</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Departments
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../accessibility page/accessibility.html">Accessibility</a></li>
+            <li><a href="../art.html">Art</a></li>
+            <li><a href="../gameDesign.html">Game Design</a></li>
+            <li><a href="../QA page/qa.html">QA</a></li>
+            <li><a href="../soundDesign.html">Sound Design</a></li>
+            <li><a href="../ui.html">UI</a></li>
+            <li><a href="../writing.html">Writing</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactUs">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+
+  <!--<div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3">-->
+          <!-- Replace SVG with an image -->
+          <!--<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="grey" />
+          </svg>
+        </div>-->
+
+        <!--<div class="col-sm-9">-->
+          <!-- Team name -->
+          <!--<h1>The QA Team</h1>
+          <p>Running Quality Assurance for Final Escort</p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="container">
+    <div class="center">
+      <h1 id="ateam">The Accessibility Team</h1>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="rectimg">
+              <rect width="200" height="200" x="10" y="10" rx="20" ry="20" fill="url(#imgPtn)" />
+          </div>
+
+          <div class="col-sm-9">
+            <h2>Hannah Nicoletta, Accessibility Lead</h2>
+            <p>Hi! I'm Hannah - a musician, artist, and programmer<span id="dots">...</span>
+              <span id="more"> who, more than anything, just loves to make stuff. I'm a Master of Digital Media student currently working towards the video game industry, as I move from creating soundtracks and art to creating a game of my own. At the end of the day, whether it's drawing on a napkin or coding at my computer, you can find me happily creating.</span>
+            </p>
+
+            <button onclick="showMore()" id="smbutton">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentBox">
+    <div class="accessinfo">
+      <h1>What is Accessibility?</h1>
+      <p class="access">We aim to work with the Student Access Collictive at TMU to ensure that our game, once created, is able to be played by everyone.</p>
+      <p class="access">Please use the dropdown menu below to learn more about different types of accessibility features!</p>
+    </div>
+
+    <div class="owrapper">
+      <label for="options" id="startlearning">Start Learning!</label>
+      <select id="options" name="options" onchange="menuChange(this.value)">
+          <option value="motor">Motor</option>
+          <option value="cognitive">Cognitive</option>
+          <option value="vision">Vision</option>
+          <option value="hearing">Hearing</option>
+          <option value="speech">Speech</option>
+      </select>
+    </div>
+  </div>
+    
+  <div class="features" id="motorinfo">
+    <div class="featurestext">
+      <h2>Motor Accessibility Features!</h2>
+      <p>Motor Accessibility Features are game features that are designed to help people with reduced mobility or dexterity enjoy the game experience!</p>
+      <p>Some examples of these features are:</p>
+
+      <ul>
+        <li>Allowing for controls to be remapped</li>
+        <li>Ensuring the game is compatible with an Adaptive Controller</li>
+        <li>Allowing for control sensitivity to be adjusted</li>
+        <li>Provide alternatives for repeated inputs (button-mashing, quick-time) or held inputs</li>
+        <li>Provide alternatives to timing-based mechanics</li>
+      </ul>
+    </div>
+
+    <div class="image-row">
+      <img src="xad.jpg" alt="Xbox Adaptive Controller">
+      <img src="amode.jpg" alt="Example of an assist mode page">
+      <img src="bmap.jpg" alt="Example of button remapping">
+    </div>
+  </div>
+
+    
+  <div class="features" id="cognitiveinfo">
+    <div class="featurestext">
+      <h2>Cognitive Accessibility Features!</h2>
+      <p>Cognitive Accessibility Features are game features that are designed to help people with memory, attention, processing, and much more.</p>
+      <p>Some examples of these features are:</p>
+
+      <ul>
+        <li>Using simple, clear language in an easily readable font size</li>
+        <li>Allowing players to progress through text at their own pace</li>
+        <li>Allow for reminders of controls or objectives during gameplay</li>
+        <li>Provide summaries of progress</li>
+        <li>Give clear indication of what elements can be interacted with</li>
+      </ul>
+    </div>
+
+    <div class="image-row">
+      <img src="cogimg1.jpg" alt="Quest and Objective Reminders">
+      <img src="cogimg2.jpg" alt="Clear indivation of interactive objects">
+      <img src="cogimg3.png" alt="Control Reminders">
+    </div>
+  </div>
+
+  <div class="features" id="hearinginfo">
+    <div class="featurestext">
+      <h2>Hearing Accessibility Features!</h2>
+      <p>Hearing Accessibility Features are game features that are designed to help people who are hard of hearing or d/Deaf enjoy playing different games!</p>
+      <p>Some examples of these features are:</p>
+
+      <ul>
+        <li>Provide subtitles for all speech</li>
+        <li>Provide separate volume controls for effects, music, and speech</li>
+        <li>Provide captions for significant background sounds</li>
+        <li>Provide a visual indication of who is currently speaking</li>
+        <li>Allow for voice chat as an option in multiplayer settings</li>
+      </ul>
+    </div>
+    <div class="image-row">
+      <img src="subtitles.jpg" alt="subtitles and descriptions in a video game">
+      <img src="subtitlesmc.webp" alt="Minecraft event subtitles">
+      <img src="vcoptions.png" alt="Voice chat options">
+    </div>
+  </div>
+
+  <div class="features" id="visioninfo">
+    <div class="featurestext">
+      <h2>Vision Accessibility Features!</h2>
+      <p>Vision Accessibility Features are game features that are designed to help people with low vision, colourblindness, or blindness play games!</p>
+      <p>Some examples of these features are:</p>
+
+      <ul>
+        <li>Provide High Contrast between text/UI and background</li>
+        <li>Use surround sound or screenreader support</li>
+        <li>Provide voiceovers for all text</li>
+        <li>Ensure no essential information is conveyed by colour alone</li>
+        <li>Provide a choice of different designs for cursors, crosshairs, and other important on-screen elements</li>
+      </ul>
+    </div>
+
+    <div class="image-row">
+      <img src="visimg1.webp" alt="Colourblind modes for video games">
+      <img src="tts.webp" alt="Screen Reader/TTS options">
+      <img src="cursors.jpg" alt="Different cursor options">
+    </div>
+  </div>
+
+  <div class="features" id="speechinfo">
+    <div class="featurestext">
+      <h2>Speech Accessibility Features!</h2>
+      <p>Speech Accessibility Features are game features that are designed to help people who struggle with verbal communication play different games!</p>
+      <p>Some examples of these features are:</p>
+
+      <ul>
+        <li>Making sure speech input is not a mandatory feature in your game, or can be turned off</li>
+        <li>For online multiplayer games, allow a preference to be set for players who are willing to play without voice chat</li>
+        <li>Provide visual communication systems for multiplayer games</li>
+        <li>Base speech recognition on volume threshold instead of words</li>
+      </ul>
+    </div>
+    <div class="image-row">
+      <img src="emotes.webp" alt="Visual Communication Systems">
+      <img src="emotes2.webp" alt="Basic visual communication in Stardew Valley">
+      <img src="emotes3.avif" alt="Symbol chatting video games">
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footerinfo" >
+      <p>Game Makers Union</p>
+  <p>Toronto Metropolitan University</p>
+   <p>350 Victoria Street</p>
+   <p>Toronto, ON, Canada</p>
+   <p>P: 416-555-5555</p></div>
+   <div class="disclamer" ><p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.</div> </p>
+  
+  </footer>
+</body>
