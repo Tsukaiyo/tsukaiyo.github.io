@@ -1,13 +1,15 @@
 /*---------------------------------BASIC*/
 
 footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgba(35, 31, 32, 0.6);
-  color: white;
-  height: 120px;
-  opacity: 0.6;
-}
+    text-align: center !important;
+    background-color: rgba(35, 31, 32, 0.6);
+    color: white;
+    opacity: 0.6;
+    text-shadow:none;
+
+    margin: auto !important;
+  }
+
 
 body{
 
@@ -19,7 +21,7 @@ body{
 /*---------------------------------TITLES-&-TEXT*/
 .center {
   text-align: center;
-  font-family: "Hind Madurai", serif;
+  font-family: "Hind Madurai", serif ;
   font-weight: 400;
   font-style: normal;
 }
@@ -31,9 +33,8 @@ h1{
 
   text-align: center;
 
-  font-family: "Quattrocento", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Cinzel', serif !important;
+    color:#000000;
 }
 
 h2{
@@ -42,9 +43,8 @@ h2{
   margin: auto;
   text-align: center;
 
-  font-family: "Quattrocento", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Cinzel', serif !important;
+    color:#000000;
 }
 
 h3{
@@ -53,7 +53,7 @@ h3{
   margin: auto;
   text-align: center;
 
-  font-family: "Quattrocento", serif;
+  font-family: "Quattrocento", serif !important;
   font-weight: 400;
   font-style: normal;
 }
@@ -64,7 +64,7 @@ h4{
   margin: auto;
   text-align: center;
 
-  font-family: "Quattrocento", serif;
+  font-family: "Quattrocento", serif !important;
   font-weight: 400;
   font-style: header;
 }
@@ -75,6 +75,17 @@ p{
   margin: auto;
 
   text-align: left;
+
+  font-family: "Quattrocento", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p1{
+  padding: 1em;
+  margin: auto;
+
+  text-align: center;
 
   font-family: "Quattrocento", serif;
   font-weight: 400;
@@ -95,10 +106,6 @@ p{
 /*---------------------------------IMAGES-&-VIDEOS*/
 
 img{
-
- 
-/*  width: 14em;*/
-/*  width: 30%;*/
 }
 
 .headshot{
@@ -110,10 +117,8 @@ img{
 .wideImages{
 }
 
-/*---------------------------------CANVA-EMBEDS*/
 
-
-/*---------------------------------CLASSES*/
+/*---------------------------------NAV-BAR*/
 
 /*Navigation*/
 /* Add a black background color to the top navigation */
@@ -121,8 +126,6 @@ img{
   overflow: hidden;
   color: #E3D4AC; 
 }
-
-
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -162,7 +165,12 @@ img{
 }
     
 
+/*---------------------------------TEAM-MEMBERS*/
 
+
+.jumbotron{
+  background-color: tan !important;
+}
 
 .col-sm-5 {
   background-color: #dedede;
@@ -180,7 +188,10 @@ img{
 /*Art*/
 .multicontainer{
 
+  Margin: auto;
+
   background-color: tan;
+  width: 70%;
 
 }
 
@@ -190,6 +201,8 @@ img{
   text-align: center;
   margin: auto;
   padding: 5em;
+
+  width: 70%
 /*  clear: left;*/
 }
 
@@ -206,34 +219,18 @@ img{
 
 }
 
-
 .centerteam {
   text-align: center;
   margin: auto;
 }
 
-
-/*Grid*/
-
-.grid-container {
-  display: inline-grid;
-  grid-template-columns: auto auto;
-  gap: 1em;
-  padding: 1em;
-  width: 90%;
-  margin: auto;
-}
-.grid-item {
-  fill: tan;
-  border: 0.1em solid rgba(0, 0, 0, 0.8);
-  padding: 2em;
-/*  font-size: 3em;*/
-/*  text-align: center;*/
-
-width: 40%;
+.panel-heading{
+  background-color: #471414 !important;
+    color: #F2E5DA !important;
 }
 
-/*Dropdoown*/
+
+/*---------------------------------DROPDOWN*/
 
 .panel-body{
   background-image: url('images/092.jpg');
@@ -252,7 +249,8 @@ width: 40%;
 
 }
 
-/*Slideshow*/
+/*---------------------------------SLIDESHOW*/
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -331,7 +329,7 @@ width: 40%;
 }
 
 /* Fading animation */
-.fade {
+.fade1 {
   animation-name: fade;
   animation-duration: 1.5s;
 }
