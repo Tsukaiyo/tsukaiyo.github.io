@@ -17,6 +17,39 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="gscript.js"></script>
+  <style>
+    .container {
+      overflow: hidden;
+    }
+
+    .filterDiv {
+      display: none;
+      /* Hidden by default */
+    }
+
+    .show {
+      display: block;
+    }
+
+    /* Style the buttons */
+    .btn {
+      background-color: #471414;
+      color:#F2E5DA;
+      font-family: 'Cinzel', serif !important;
+      font-size: large;
+    }
+
+    /* Add a light grey background on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    /* Add a dark background to the active button */
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
@@ -134,212 +167,230 @@
   </div>
   </div>
 
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-            Emmett Abdelhadi</a>
-          <p>
-        </h4>
-      </div>
+  <!-- Control buttons -->
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('designers')"> Designers</button>
+    <button class="btn" onclick="filterSelection('technicians')"> Technicians</button>
+  </div>
 
-      <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Emmett is a 4th year student at the Architectural Science program.<br>Email: mabdulhadi@torontomu.ca </p>
+  <div class="container">
+    <div class="filterDiv designers">
+      <h2>Designers</h2>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                Emmett Abdelhadi</a>
+              <p>
+            </h4>
+          </div>
+
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Emmett is a 4th year student at the Architectural Science program.<br>Email: mabdulhadi@torontomu.ca
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                Cody Jensen</a>
+            </h4>
+          </div>
+
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Cody is a student at The Creative School's Master of Digital Media program.<br>email:
+                  cody.jensen@torontomu.ca </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                Angad Sidhu</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Angad is a 1st year student at the Computer Science program program.<br>email:
+                  angad.sidhu@torontomu.ca
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                Seth Britton</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Seth is a 2nd year student at The Creative School's New Media program.<br>email:
+                  seth.britton@torontomu.ca </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                Sayeed Jalil</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Sayeed is a 2nd year student at the Computer Science program.<br>email: sayeed.jalil@torontomu.ca
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                Garv</a>
+            </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Grav is a 2nd year student at the Computer Science program.<br>email: garv.gupta@torontomu.ca </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                Gubby (Leandro)</a>
+            </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Gubby is a 4th year student at the Computer Science program.<br>email: leandro.pascual@torontomu.ca
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                Maya</a>
+            </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Maya is a 4th year student at the Chemistry program.<br>email: maya.mott@torontomu.ca </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                Sanjid Sharaf</a>
+            </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Sanjid is a 2nd student at the Computer Science program.<br>email: sanjid.sharaf@torontomu.ca </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                Dylan Singh</a>
+            </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Dylan is a 2nd year student at the Mechanical Engineering program.<br>email: dylan.singh@torontomu.ca
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+                Sophie Ducharme</a>
+            </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+                <p>Sophie is a 2nd year student at The Creative School's Media production program.<br>email:
+                  Sophie.ducharme@torontomu.ca </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+                Kian</a>
+            </h4>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="col-sm-9">
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
 
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-            Cody Jensen</a>
-        </h4>
-      </div>
-
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Cody is a student at The Creative School's Master of Digital Media program.<br>email:
-              cody.jensen@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-            Angad Sidhu</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Angad is a 1st year student at the Computer Science program program.<br>email: angad.sidhu@torontomu.ca
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-            Seth Britton</a>
-        </h4>
-      </div>
-      <div id="collapse4" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Seth is a 2nd year student at The Creative School's New Media program.<br>email:
-              seth.britton@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-            Sayeed Jalil</a>
-        </h4>
-      </div>
-      <div id="collapse5" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Sayeed is a 2nd year student at the Computer Science program.<br>email: sayeed.jalil@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-            Garv</a>
-        </h4>
-      </div>
-      <div id="collapse6" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Grav is a 2nd year student at the Computer Science program.<br>email: garv.gupta@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-            Gubby (Leandro)</a>
-        </h4>
-      </div>
-      <div id="collapse7" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Gubby is a 4th year student at the Computer Science program.<br>email: leandro.pascual@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
-            Maya</a>
-        </h4>
-      </div>
-      <div id="collapse8" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Maya is a 4th year student at the Chemistry program.<br>email: maya.mott@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse9">
-            Sanjid Sharaf</a>
-        </h4>
-      </div>
-      <div id="collapse9" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Sanjid is a 2nd student at the Computer Science program.<br>email: sanjid.sharaf@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse10">
-            Dylan Singh</a>
-        </h4>
-      </div>
-      <div id="collapse10" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Dylan is a 2nd year student at the Mechanical Engineering program.<br>email: dylan.singh@torontomu.ca
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse11">
-            Sophie Ducharme</a>
-        </h4>
-      </div>
-      <div id="collapse11" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-            <p>Sophie is a 2nd year student at The Creative School's Media production program.<br>email:
-              Sophie.ducharme@torontomu.ca </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a id="al" data-toggle="collapse" data-parent="#accordion" href="#collapse12">
-            Kian</a>
-        </h4>
-      </div>
-      <div id="collapse12" class="panel-collapse collapse">
-        <div class="panel-body">
-          <div class="col-sm-9">
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Technicians!! -->
-
+    <!-- Technicians!! -->
+    <div class="filterDiv technicians">
       <h2> Technicians</h2>
 
 
@@ -386,7 +437,8 @@
         <div id="collapse15" class="panel-collapse collapse">
           <div class="panel-body">
             <div class="col-sm-9">
-              <p>Jennifer is a 1st year student at the Computer Science program.<br>email:jennifer.n.nguyen@torontomu.ca
+              <p>Jennifer is a 1st year student at the Computer Science
+                program.<br>email:jennifer.n.nguyen@torontomu.ca
               </p>
             </div>
           </div>
@@ -425,29 +477,79 @@
           </div>
         </div>
       </div>
-
-
     </div>
-    <footer>
-      <div class="footerinfo">
-        <p>Game Makers Union</p>
-        <p>Toronto Metropolitan University</p>
-        <p>350 Victoria Street</p>
-        <p>Toronto, ON, Canada</p>
-        <p>P: 416-555-5555</p>
-      </div>
-      <div class="disclamer">
-        <p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.
-      </div>
-      </p>
-    </footer>
+  </div>
 
-    <script>
-      document.getElementById("portfolioButton1").onclick = function () {
-        window.location.href = "https://ca.linkedin.com/in/isabella-greco-a9435a173";
-      };
-      document.getElementById("portfolioButton2").onclick = function () {
-        window.location.href = "https://ca.linkedin.com/in/tristan-meyer-odell-08a880206";
-      };
-    </script>
+
+  </div>
+  <footer>
+    <div class="footerinfo">
+      <p>Game Makers Union</p>
+      <p>Toronto Metropolitan University</p>
+      <p>350 Victoria Street</p>
+      <p>Toronto, ON, Canada</p>
+      <p>P: 416-555-5555</p>
+    </div>
+    <div class="disclamer">
+      <p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.
+    </div>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("portfolioButton1").onclick = function () {
+      window.location.href = "https://ca.linkedin.com/in/isabella-greco-a9435a173";
+    };
+    document.getElementById("portfolioButton2").onclick = function () {
+      window.location.href = "https://ca.linkedin.com/in/tristan-meyer-odell-08a880206";
+    };
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+  </script>
 </body>
