@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
   <script src="script.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -40,7 +41,7 @@
       });
 
       document.getElementById('writing').addEventListener('click', () => {
-        window.location.href = "writing page/writing.html";
+        window.location.href = "writing.html";
       });
     });
   </script>
@@ -55,7 +56,8 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="About.html">About</a></li>
-        <li class="dropdown">
+        <li><a href="index.html#departments">Our Departments</a></li>
+        <!-- <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Departments
             <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -67,13 +69,15 @@
             <li><a href="ui.html">UI</a></li>
             <li><a href="writing.html">Writing</a></li>
           </ul>
-        </li>
+        </li> -->
         <li><a href="contactus.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <img class="img-responsive" src="images/FinalEscortLogo.png">
+  <div class="logo-margin" style="background-color: #000000cc;">
+    <img class="img-responsive" src="images/FinalEscortLogo.png">
+  </div>
   <div class="container">
     <div class="jumbotron">
       <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
@@ -90,134 +94,178 @@
       <p>When the royal family falls to an uprising, a lone Knight flees with the Princess. Her life and the kingdom's
         future are in your hands. With 10 days to navigate treacherous paths and lurking dangers, every decision you
         make will shape its fate. How far will loyalty take you when the kingdom's future is hanging by a thread?</p>
-      <p>Releasing April 2025</p>
+      <p><b style="font-size: xx-large;">Releasing April 2025</b></p>
       <br>
     </div>
   </div>
 
 
   <!-- Departments -->
-  <div class="container">
-    <h1 class="center">Departments</h1>
-    <!-- Row 1 -->
-    <div class="row">
-      <!-- Department card 1 -->
-      <div class="col-sm-5" id="access">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/access icon.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Accessibility</h2>
-            <p>Making sure the game is playable for everyone, with features that support a wide range of abilities.</p>
-          </div>
+  <hr id="departments">
+  <h1 class="center">Departments</h1>
+  <p class="center">Click/tap on any of the departments to see more information about them!</p>
+  <!-- Custom CSS -->
+
+  <div class="department-container">
+    <div class="department-div" id="access">
+      <h2>Accessibility <img class="inline-icon" src="images/access icon.png"></h2>
+      <p>
+        Making sure the game is playable for everyone, with features that support a wide range of abilities.
+      </p>
+    </div>
+    <div class="department-div" id="art">
+      <h2>Art <img class="inline-icon" src="images/palette.png"></h2>
+      <p>
+        Bringing the characters and story world to life through our visuals, allowing the players to immerse themselves
+        into a vivid gameplay experience.
+      </p>
+    </div>
+    <div class="department-div" id="game">
+      <h2>Game Design <img class="inline-icon" src="images/concrete-bag.png"></h2>
+      <p>
+        Crafting the game's world, story, and mechanics to create a unique and engaging experience for the players.
+      </p>
+    </div>
+    <div class="department-div" id="programming"q>
+      <h2>Programming <img class="inline-icon" src="images/computing.png"></h2>
+      <p>
+        Developing the game's logic and mechanics, ensuring a smooth and enjoyable gameplay experience for the players.
+      </p>
+    </div>
+    <div class="department-div" id="qa">
+      <h2>Quality Assurance (QA) <img class="inline-icon" src="images/magnifying-glass.png"></h2>
+      <p>
+        Ensuring the game is clear, fun, and bug-free.
+      </p>
+    </div>
+    <div class="department-div" id="sound">
+      <h2>Sound Design <img class="inline-icon" src="images/sound-waves.png"></h2>
+      <p>
+        Composing and recording original music and sound effects, to enhance the gameplay experience with immersive
+        audio.
+      </p>
+    </div>
+    <div class="department-div" id="ui">
+      <h2>User Interface (UI) <img class="inline-icon" src="images/click.png"></h2>
+      <p>
+        Creating a user-friendly interface that allows players to navigate and interact with the game, ensuring a
+        smooth and enjoyable experience.
+      </p>
+    </div>
+    <div class="department-div" id="writing">
+      <h2>Writing <img class="inline-icon" src="images/notebook.png"></h2>
+      <p>
+        Crafting the game's world, story, and mechanics to create a unique and engaging experience for the players.
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-sm-5" id="access">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/access icon.png">
         </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-5" id="art">
-        <!-- Department card 2 -->
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/palette.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Art</h2>
-            <p>Bringing the characters and story world to life through our visuals, allowing the players to immerse
-              themselves into a vivid game play experience. </p>
-          </div>
+        <div class="col-sm-8">
+          <h2>Accessibility</h2>
+          <p>Making sure the game is playable for everyone, with features that support a wide range of abilities.</p>
         </div>
       </div>
     </div>
-    <br>
-    <!-- Row 2 -->
-    <div class="row">
-      <!-- Department card 3 -->
-      <div class="col-sm-5" id="game">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/concrete-bag.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Game Design</h2>
-            <p>Conceptualizing and designing an engaging gameplay to keep players hooked from start to finish.</p>
-          </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5" id="art">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/palette.png">
         </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <!-- Department card 4 -->
-      <div class="col-sm-5">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/computing.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Programming</h2>
-            <p>Building the game.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <!-- Row 3 -->
-    <div class="row">
-      <!-- Department card 5 -->
-      <div class="col-sm-5" id="qa">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/magnifying-glass.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Quality Assurance</h2>
-            <p>Ensuring the game is clear, fun, and bug-free.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <!-- Department card 6 -->
-      <div class="col-sm-5" id="sound">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/sound-waves.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Sound Design</h2>
-            <p>Composing and recording original music and sound effects, to enhance the gameplay experience with
-              immersive audio. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <!-- Row 4 -->
-    <div class="row">
-      <!-- Department card 7 -->
-      <div class="col-sm-5" id="ui">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/click.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>User Interface (UI)</h2>
-            <p>Designing easy-to-use interfaces and experiences that make playing the game enjoyable and intuitive.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2"></div>
-      <!-- Department card 8 -->
-      <div class="col-sm-5" id="writing">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="images/notebook.png">
-          </div>
-          <div class="col-sm-8">
-            <h2>Writing</h2>
-            <p>Crafting the interactive story, dialogue and building engaging lore that will allow players to shape the
-              game's narrative through their choices. </p>
-          </div>
+        <div class="col-sm-8">
+          <h2>Art</h2>
+          <p>Bringing the characters and story world to life through our visuals, allowing the players to immerse
+            themselves into a vivid game play experience. </p>
         </div>
       </div>
     </div>
   </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-5" id="game">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/concrete-bag.png">
+        </div>
+        <div class="col-sm-8">
+          <h2>Game Design</h2>
+          <p>Conceptualizing and designing an engaging gameplay to keep players hooked from start to finish.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/computing.png">
+        </div>
+        <div class="col-sm-8">
+          <h2>Programming</h2>
+          <p>Building the game.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-5" id="qa">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/magnifying-glass.png">
+        </div>
+        <div class="col-sm-8">
+          <h2>Quality Assurance</h2>
+          <p>Ensuring the game is clear, fun, and bug-free.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5" id="sound">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/sound-waves.png">
+        </div>
+        <div class="col-sm-8">
+          <h2>Sound Design</h2>
+          <p>Composing and recording original music and sound effects, to enhance the gameplay experience with
+            immersive audio. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-5" id="ui">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/click.png">
+        </div>
+        <div class="col-sm-8">
+          <h2>User Interface (UI)</h2>
+          <p>Designing easy-to-use interfaces and experiences that make playing the game enjoyable and intuitive.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5" id="writing">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="images/notebook.png">
+        </div>
+        <div class="col-sm-8">
+          <h2>Writing</h2>
+          <p>Crafting the interactive story, dialogue and building engaging lore that will allow players to shape the
+            game's narrative through their choices. </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
 
 
   <footer>
@@ -230,8 +278,8 @@
     </div>
     <div class="disclamer">
       <p>DISCLAIMER: This site is not affiliated with Toronto Metropolitan University in any official way.
+      </p>
     </div>
-    </p>
   </footer>
 
 </body>

@@ -127,10 +127,10 @@ padding: 14px 16px;
 
 footer {
     text-align: center;
-    background-color: rgba(35, 31, 32, 0.6);
+    padding: 3px;
+    background-color: #000000cc;
     color: white;
-    opacity: 0.6;
-    text-shadow:none;
+    text-shadow: none;
 }
 
 .rectimg{
@@ -200,3 +200,38 @@ img {
     max-width: 100%;
     height: auto;
   }
+
+.logo-margin {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo-margin {
+        margin-top: 120px;
+    }
+}
+
+.department-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.department-div {
+    border: 3px solid maroon;
+    background-color: #f2e5da;
+    margin: 4px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.department-div:hover {
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.inline-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1em; /* Set the height to the same as the font size */
+}

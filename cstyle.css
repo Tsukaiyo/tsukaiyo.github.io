@@ -111,13 +111,12 @@ padding: 14px 16px;
 }
 
 footer {
-text-align: center;
-padding: 30px 0;
-background-color: #949494;
-color: white;
+    text-align: center;
+    padding: 3px;
+    background-color: #000000cc;
+    color: white;
+    text-shadow: none;
 }
-
-
 
 .rectimg, .rectimg1, .rectimg2{
     width: 200px;
@@ -316,6 +315,7 @@ opacity: 1; /* Show text */
 .button-container {
     padding-top: 5vh;
     display: flex; 
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px; 
  }
