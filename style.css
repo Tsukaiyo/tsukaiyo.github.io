@@ -109,6 +109,7 @@ p{
     padding-left: 50px;
   }
 
+
 .center {
 text-align: center;
 }
@@ -235,3 +236,12 @@ img {
     vertical-align: middle;
     height: 1em; /* Set the height to the same as the font size */
 }
+
+.envoy-logo {
+    width: 50% !important;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
